@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Script 01 - Encriptador de Texto</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/responsive.css">
+        <!-- Icons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img src="./imagen/gatito-logo.jpg" alt="logo-gatito">
+            <h1>Encriptador Luna</h1>
+        </header>
+        
+        <main>
+            <section class="textoEscrito">
+                <textarea class="area" placeholder="Ingrese el texto aqui"></textarea>
+                <p class="aviso"><i class='bx bxs-error-circle bx-xs'></i> Solo letras minúsculas y sin acentos</p>
+                <div class="content-botones">
+                    <input type="button" class="encrip-btn" value="Encriptar">
+                    <input type="button" class="desencrip-btn" value="Desencriptar">
+                </div>
+            </section>
+
+            <section class="textoEncript">
+                <div class="content-imagen">
+                    <img src="./imagen/luna-encript.jpg" alt="Gato Luna" id="luna">
+                </div>
+                <div class="content-h3">
+                    <h3>Ningún mensaje fue encontrado</h3>
+                </div>
+                <div class="content-parrafo">
+                    <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+
+                <div class="content-resultado">
+                    <h3 id="titulo-resultado">¡Mensaje Cambiado!</h3>
+                    <p id="texto-encriptado"></p> 
+                </div>
+                
+                <div class="error ocultar">
+                    <img src="./imagen/error.jpg" alt="chibi-error">
+                    <p id="error-texto">Ingrese nuevamente el texto...</p> 
+                </div>
+                <div class="content-copiar">
+                    <input type="button" class="copiar-btn" value="Copiar">
+                </div>
+        </main>
+
+        <footer>
+            <div class="redes-sociales">
+                <a href="https://github.com/Navi666Lilith"><i class='bx bxl-github bx-lg'></i></a>
+                <a href="https://www.linkedin.com/in/belén-buttarelli"><i class='bx bxl-linkedin bx-lg'></i></a>
+            </div>
+            <p class="copyright">&copy Desarrollado por Belén Buttarelli - Copyright 2024</p>
+        </footer>
+
+        <!-- Script -->
+        <script src="./js/script.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>
+
+</html>
+
